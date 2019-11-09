@@ -1,7 +1,5 @@
 package com.example.demo;
 
-import java.util.List;
-
 import javax.sql.DataSource;
 
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -18,9 +16,8 @@ public class StudentJDBCTemplate {
 		jdbcTemplateObject.update("insert into student(Name,Age)values(?,?)",Name,Age);
 		return;
 	}
-	public List<Student> listStudents() {
-		List <Student> student = jdbcTemplateObject.query("select * from Student",new StudentMapper());
-		return null;
-	}
-
+//	public List<Student> listStudents() {
+//		List <Student> student = jdbcTemplateObject.query("select * from Student",new StudentMapper());
+//		return null;
+//	}
 }

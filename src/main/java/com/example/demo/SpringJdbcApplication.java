@@ -12,5 +12,4 @@ public class SpringJdbcApplication {
 		StudentJDBCTemplate t = context.getBean(StudentJDBCTemplate.class);
 		t.create("I Make it", 26);
 	}
-
 }
