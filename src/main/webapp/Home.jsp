@@ -13,6 +13,10 @@
 		<input type="number" name="Age"><br>
 		<input type="submit"  value="NEVER GIVE UP">
 	</form>
+	<form action="back">
+		<input type="number" name="Id"><br>
+		<input type="submit" value="I can make anything but need only time">
+	</form>
 
 </body>
 </html>

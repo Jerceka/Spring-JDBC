@@ -6,6 +6,7 @@ import javax.persistence.Id;
 @Entity
 public class Account {
 	@Id
+	private int Id;
 	private String Firstname;
 	private String Lastname;
 	private int Age;
@@ -26,5 +27,15 @@ public class Account {
 	}
 	public void setAge(int age) {
 		Age = age;
+	}
+	public int getId() {
+		return Id;
+	}
+	public void setId(int id) {
+		Id = id;
+	}
+	@Override
+	public String toString() {
+		return "Account [Firstname=" + Firstname + ", Lastname=" + Lastname + ", Age=" + Age + "]";
 	}
 }
