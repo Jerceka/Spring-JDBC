@@ -6,36 +6,29 @@ import javax.persistence.Id;
 @Entity
 public class Account {
 	@Id
-	private int Id;
-	private String Firstname;
-	private String Lastname;
-	private int Age;
-	public String getFirstname() {
-		return Firstname;
-	}
-	public void setFirstname(String firstname) {
-		Firstname = firstname;
-	}
-	public String getLastname() {
-		return Lastname;
-	}
-	public void setLastname(String lastname) {
-		Lastname = lastname;
-	}
-	public int getAge() {
-		return Age;
-	}
-	public void setAge(int age) {
-		Age = age;
-	}
+	private int id;
+	private String name;
+	private int age;
 	public int getId() {
-		return Id;
+		return id;
 	}
 	public void setId(int id) {
-		Id = id;
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
 	}
 	@Override
 	public String toString() {
-		return "Account [Firstname=" + Firstname + ", Lastname=" + Lastname + ", Age=" + Age + "]";
+		return "Account [name=" + name + ", age=" + age + "]";
 	}
 }

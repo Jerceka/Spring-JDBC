@@ -24,6 +24,7 @@ public class Main {
 		ModelAndView MV = new ModelAndView("Here.jsp");
 		Account a = repo.findById(Id).orElse(new Account());
 		MV.addObject(a);
+		System.out.println(repo.findByName("Merve"));
 		return MV;
 	}
 }
