@@ -8,13 +8,12 @@
 </head>
 <body>
 	<form action="Make">
-		<input type="text" name="Firstname"><br>
-		<input type="text" name="Lastname"><br>
-		<input type="number" name="Age"><br>
+		<input type="text" name="name"><br>
+		<input type="number" name="age"><br>
 		<input type="submit"  value="NEVER GIVE UP">
 	</form>
 	<form action="back">
-		<input type="number" name="Id"><br>
+		<input type="number" name="id"><br>
 		<input type="submit" value="I can make anything but need only time">
 	</form>
 

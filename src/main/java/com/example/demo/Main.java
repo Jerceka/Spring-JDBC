@@ -3,7 +3,6 @@ package com.example.demo;
 import java.util.List;
 import java.util.Optional;
 
-import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,9 +29,9 @@ public class Main {
 		return "Home.jsp";
 	}
 	@RequestMapping("/back")
-	public ModelAndView Here(@RequestParam int Id) {
+	public ModelAndView Here(@RequestParam int id) {
 		ModelAndView MV = new ModelAndView("Here.jsp");
-		Account a = repo.findById(Id).orElse(new Account());
+		Account a = repo.findById(id).orElse(new Account());
 		MV.addObject(a);
 		System.out.println(repo.findByName("Merve"));
 		return MV;
